@@ -13,13 +13,13 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='kocrawl-cna',
-    version='1.0.9',
+    version='1.0',
     description='Korean web crawler collections',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='(original : Hyunwoong Ko), Saebom Lee, Jeongyun Seo, Youngeun Cho',
-    author_email='gusdnd852@naver.com, 00springbom00@gmail.com, yooniverse@knu.ac.kr, youngcool0.0@gmail.com',
-    url='https://github.com/Kochat-framework/kocrawl',
+    author_email='gusdnd852@naver.com',
+    url='https://github.com/choyoungeun/kocrawl-cna.git',
     packages=find_packages(exclude=[]),
     keywords=['crawler', 'korean crawler', 'kochat'],
     install_requires=read_file('requirements.txt', lambda f: list(

@@ -19,7 +19,11 @@ setup(
     long_description_content_type='text/markdown',
     author='(original : Hyunwoong Ko), Saebom Lee, Jeongyun Seo, Youngeun Cho',
     author_email='gusdnd852@naver.com, 00springbom00@gmail.com, yooniverse@knu.ac.kr, youngcool0.0@gmail.com',
+<<<<<<< HEAD
     url='https://github.com/Kochat-framework/kocrawl',
+=======
+    url='https://github.com/choyoungeun/kocrawl-master',
+>>>>>>> 963fb90 (CNA_project crawler commit.)
     packages=find_packages(exclude=[]),
     keywords=['crawler', 'korean crawler', 'kochat'],
     install_requires=read_file('requirements.txt', lambda f: list(
@@ -36,5 +40,9 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+<<<<<<< HEAD
+=======
+        'Programming Language :: Python :: 3.9',
+>>>>>>> 963fb90 (CNA_project crawler commit.)
     ],
 )

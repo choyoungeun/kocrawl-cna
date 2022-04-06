@@ -1,9 +1,12 @@
 CRAWLER = {
     'kinds': {
         'dust': ['미세먼지', '초미세먼지', '오존'],
-        'cycle': ['자전거','따릉이'],
-        'car':['전기차','전기자동차'],
-        'rent':['대여할 곳']
+        'rent': ['대여할 곳']
+    },
+
+    'category': {
+        'cycle': ["자전거", "따릉이", "새싹따릉이", "새싹 따릉이"],
+        'car': ["전기차", "전기자동차", "전기 자동차", "전기 차"],
     },
 
     'date': {
@@ -85,6 +88,6 @@ ANSWER = {
     'dust_init': '{location}의 다양한 대기오염 정보를 전해드릴게요. 😀\n',
     'weather_init': '{location}의 날씨 정보를 전해드릴게요. 😉\n',
     'map_init': '{location}의 {place}에 대한 정보를 전해드릴게요!. 😀😀\n',
-    'rent_init': '{location}의 {kinds} {item} 근처 정보를 전해드릴게요!. 😀😀\n',
+    'rent_init': '{location}의 {category} {item} 근처 정보를 전해드릴게요!. 😀😀\n',
     'fallback': "죄송해요.. 말씀하신 정보는 저도 잘 모르겠네요."
 }

@@ -3,17 +3,22 @@ from kocrawl.answerer.base_answerer import BaseAnswerer
 
 class RentAnswerer(BaseAnswerer):
 
-    def rent_form(self, location: str, kinds: str, item: str, result: dict) -> str:
+    def rent_form(self, location: str, category: str, result: dict) -> str:
         """
         여행지 출력 포맷
-
         :param location: 지역
         :param place: 장소
         :param result: 데이터 딕셔너리
         :return: 출력 메시지
         """
+        item=""
 
-        msg = self.rent_init.format(location=location, kinds=kinds, item=item)
+        if category in self.category['cycle']:
+            item = "대여소"
+        elif category in self.category['car']:
+            item = "충전소"
+
+        msg = self.rent_init.format(location=location, category=category, item=item)
         msg += '{location} 근처의 '
 
         msg = self._add_msg_from_dict(result,'near_name1', msg, '가장 가까운 장소는 {near_name1}이고,')

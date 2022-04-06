@@ -7,10 +7,10 @@ class TermSearcher(BaseSearcher):
     def _make_query(self):
         return None
 
-    def search_term(self, term: str) -> tuple:
+    def search_term(self, eco: str) -> tuple:
 
         results = self._bs4_documents(
-            url=self.url["naver_term"] + "search.naver?query=", selectors=self.selectors[0], query=term
+            url=self.url["naver_term"] + "search.naver?query=", selectors=self.selectors[0], query=eco
         )
 
         # for result in results:

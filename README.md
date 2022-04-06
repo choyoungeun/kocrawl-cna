@@ -39,9 +39,9 @@ Kocrawl 패키지는 네이버, 구글 등의 서비스로부터 정보를 크�
 
 ## 2. Getting Started 
 
-- pip install : pip를 이용해 Kocrawl을 간단하게 다운로드 하고 사용할 수 있습니다.
+- pip install : pip를 이용해 Kocrawl-cna를 간단하게 다운로드 하고 사용할 수 있습니다.
 ```shell script
-pip install kocrawl
+pip install kocrawl-cna
 ```
 <br>
 
@@ -56,7 +56,8 @@ requests==2.24.0
 
 ## 3. Supported Features
 현재 Kocrawl은 날씨, 미세먼지, 지도(장소추천), 맞춤법 교정 등 5개의 API를 지원합니다.
-+) 기존의 kocrawl에 덧붙여서 전기차충전소/자전거 대여, 사전,탄소중립 실천방안에 대한 API를 추가함. 
+
++) 기존의 kocrawl에 덧붙여서 전기차충전소/자전거 대여, 사전, 탄소중립 실천방안에 대한 API를 추가함. 
 author : 이새봄,서정윤,조영은
 date : 2022/04/06
 
@@ -122,7 +123,7 @@ date : 2022/04/06
 - 네이버 대여 장소 :
     - 최근 업데이트 : 20220406
     - 패키지 : `from kocrawl.rent import RentCrawler`
-    - 파라미터 : location(str),kinds(str), item(str) :
+    - 파라미터 : location(str),category(str) :
         - 자전거 대여 혹은 전기자동차 충전소에 대한 가까운 장소를 거리순으로 3곳까지 추천
 <br>
 
